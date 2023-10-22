@@ -1,0 +1,13 @@
+inputs=207 keys=1756 outputs=108 gates=5321
+Academic license - for non-commercial use only
+Academic license - for non-commercial use only
+Academic license - for non-commercial use only
+Academic license - for non-commercial use only
+iteration: 1; vars: 22436; clauses: 56590; decisions: 0
+iteration: 2; vars: 27034; clauses: 67337; decisions: 0
+iteration: 3; vars: 31632; clauses: 80943; decisions: 0
+iteration: 4; vars: 36230; clauses: 93698; decisions: 0
+iteration: 5; vars: 40828; clauses: 104384; decisions: 0
+Command exited with non-zero status 124
+266949.90user 20096.26system 10:00:00elapsed 797%CPU (0avgtext+0avgdata 18702080maxresident)k
+0inputs+32outputs (0major+33260981minor)pagefaults 0swaps

@@ -1,0 +1,19 @@
+inputs=233 keys=597 outputs=140 gates=1812
+Academic license - for non-commercial use only
+Academic license - for non-commercial use only
+Academic license - for non-commercial use only
+Academic license - for non-commercial use only
+iteration: 1; vars: 7802; clauses: 18545; decisions: 0
+iteration: 2; vars: 9328; clauses: 22034; decisions: 0
+iteration: 3; vars: 10854; clauses: 25743; decisions: 0
+iteration: 4; vars: 12380; clauses: 29358; decisions: 0
+iteration: 5; vars: 13906; clauses: 33019; decisions: 0
+iteration: 6; vars: 15432; clauses: 36665; decisions: 0
+iteration: 7; vars: 16958; clauses: 40280; decisions: 0
+iteration: 8; vars: 18484; clauses: 43841; decisions: 0
+iteration: 9; vars: 20010; clauses: 47449; decisions: 0
+iteration: 10; vars: 21536; clauses: 51023; decisions: 0
+iteration: 11; vars: 23062; clauses: 54622; decisions: 0
+Command exited with non-zero status 124
+267693.71user 19633.90system 10:00:00elapsed 798%CPU (0avgtext+0avgdata 9718780maxresident)k
+0inputs+56outputs (0major+9097849minor)pagefaults 0swaps
