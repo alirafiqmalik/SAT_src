@@ -219,7 +219,7 @@ DIRS	= $(BDIRS) nanotrav
 
 
 build:
-	sh ./setup.sh
+	# sh ./setup.sh
 	@for dir in $(DIRS); do \
 		(cd $$dir; \
 		echo Making $$dir ...; \
@@ -229,7 +229,7 @@ build:
 nanotrav: build
 
 check_leaks:
-	sh ./setup.sh
+	# sh ./setup.sh
 	@for dir in mnemosyne $(DIRS); do \
 		(cd $$dir; \
 		echo Making $$dir ...; \
@@ -237,7 +237,7 @@ check_leaks:
 	done
 
 optimize_dec:
-	sh ./setup.sh
+	# sh ./setup.sh
 	@for dir in $(DIRS); do \
 		(cd $$dir; \
 		echo Making $$dir ...; \
@@ -245,7 +245,7 @@ optimize_dec:
 	done
 
 lint:
-	sh ./setup.sh
+	# sh ./setup.sh
 	@for dir in $(DIRS) obj; do \
 		(cd $$dir; \
 		echo Making lint in $$dir ...; \
@@ -253,7 +253,7 @@ lint:
 	done
 
 tags:
-	sh ./setup.sh
+	# sh ./setup.sh
 	@for dir in $(DIRS) obj; do \
 		(cd $$dir; \
 		echo Making tags in $$dir ...; \
@@ -261,7 +261,7 @@ tags:
 	done
 
 all:
-	sh ./setup.sh
+	# sh ./setup.sh
 	@for dir in $(DIRS); do \
 		(cd $$dir; \
 		echo Making all in $$dir ...; \
@@ -269,7 +269,7 @@ all:
 	done
 
 testcudd:
-	sh ./setup.sh
+	# sh ./setup.sh
 	@for dir in util st mtr epd; do \
 		(cd $$dir; \
 		echo Making $$dir ...; \
@@ -280,7 +280,7 @@ testcudd:
 	make CC=$(CC) RANLIB=$(RANLIB) MFLAG= MNEMLIB= ICFLAGS="$(ICFLAGS)" XCFLAGS="$(XCFLAGS)" DDDEBUG="$(DDDEBUG)" MTRDEBUG="$(MTRDEBUG)" LDFLAGS="$(LDFLAGS)" PURE="$(PURE)" EXE="$(EXE)" testcudd$(EXE) )
 
 objlib:
-	sh ./setup.sh
+	# sh ./setup.sh
 	@for dir in $(BDIRS); do \
 		(cd $$dir; \
 		echo Making $$dir ...; \
