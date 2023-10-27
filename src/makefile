@@ -53,8 +53,8 @@ LGLINCLUDE=-I${LGLROOT}
 LGLLIBFLAGS=-llgl
 
 # gurobi
-GUROLIB=-L/opt/gurobi811/linux64/lib
-GUROALL=-I/opt/gurobi811/linux64/include ${GUROLIB}
+GUROLIB=-L/home/alira/gurobi811/linux64/lib
+GUROALL=-I/home/alira/gurobi811/linux64/include ${GUROLIB}
 
 INCLUDE=${MINISATINCLUDE} ${CPLEXINCLUDE} ${CUDDINCLUDE} ${CMSATINCLUDE} ${LGLINCLUDE} ${GUROALL}
 LIBS=-lfl -lz -lgomp ${LGLLIBFLAGS} -ldl -lgurobi_g++5.2 -lgurobi81 -lm ${STATIC_LIBS}
@@ -75,7 +75,7 @@ endif
 
 CXXFLAGS:=-c -Wall -Werror -Wno-error=deprecated -fopenmp -std=c++0x ${INCLUDE} ${DEFINES} ${DBGFLAGS} ${OPTFLAGS} ${PGFLAGS} ${LD_STATIC} -Wno-strict-overflow # -Wno-unused-result -Wno-unused-function
 LFLAGS:=-c -Wall ${INCLUDE} ${DEFINES} ${DBGFLAGS} ${OPTFLAGS} ${PGFLAGS} # -Wno-unused-result -Wno-unused-function
-LDFLAGS:=${DBGFLAGS} ${OPTFLAGS} ${PGFLAGS} $(CUDDLIBRARIES)  ${CPLEXLIBRARIES}  $(CMSATLIBRARIES) ${LGLLIBRARIES} ${GUROLIB} ${LD_STATIC}
+LDFLAGS:=${DBGFLAGS} ${OPTFLAGS} ${PGFLAGS} $(CUDDLIBRARIES) ${CPLEXLIBRARIES} $(CMSATLIBRARIES) ${LGLLIBRARIES} ${GUROLIB} ${LD_STATIC}
 SUFFIXES += .d
 
 #Find all the C++ files in the current directory.
