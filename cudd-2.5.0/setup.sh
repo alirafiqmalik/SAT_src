@@ -1,13 +1,14 @@
-# #! /bin/sh
-# CREATE="ln -s"
-# mkdir include
-# cd include
-# $CREATE ../cudd/cudd.h .
-# $CREATE ../cudd/cuddInt.h .
-# $CREATE ../epd/epd.h .
-# $CREATE ../dddmp/dddmp.h .
-# $CREATE ../mtr/mtr.h .
-# $CREATE ../obj/cuddObj.hh .
-# $CREATE ../st/st.h .
-# $CREATE ../util/util.h .
-# $CREATE ../mnemosyne/mnemosyne.h .
+#! /bin/sh
+rm -r include
+mkdir include
+cd include
+
+ln -s ../cudd/cudd.h .
+ln -s ../cudd/cuddInt.h .
+ln -s ../epd/epd.h .
+ln -s ../dddmp/dddmp.h .
+ln -s ../mtr/mtr.h .
+ln -s ../obj/cuddObj.hh .
+ln -s ../st/st.h .
+ln -s ../util/util.h .
+ln -s ../mnemosyne/mnemosyne.h .

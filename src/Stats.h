@@ -5,6 +5,7 @@
 #include <iostream>
 #include <iomanip>
 
+
 namespace stack_n {
     template<class T>
     class Hist

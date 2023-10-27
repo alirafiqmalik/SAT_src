@@ -53,8 +53,8 @@ LGLINCLUDE=-I${LGLROOT}
 LGLLIBFLAGS=-llgl
 
 # gurobi
-GUROLIB=-L/home/alira/gurobi811/linux64/lib
-GUROALL=-I/home/alira/gurobi811/linux64/include ${GUROLIB}
+GUROLIB=-L$(GUROBI_HOME)/lib
+GUROALL=-I$(GUROBI_HOME)/include ${GUROLIB}
 
 INCLUDE=${MINISATINCLUDE} ${CPLEXINCLUDE} ${CUDDINCLUDE} ${CMSATINCLUDE} ${LGLINCLUDE} ${GUROALL}
 LIBS=-lfl -lz -lgomp ${LGLLIBFLAGS} -ldl -lgurobi_g++5.2 -lgurobi81 -lm ${STATIC_LIBS}
